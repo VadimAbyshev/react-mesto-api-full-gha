@@ -97,7 +97,7 @@ class Api {
 
 }
 const api = new Api({
-    baseUrl: 'http://api.mesto.vadimo.nomoredomainsicu.ru',
+    baseUrl: 'https://api.mesto.vadimo.nomoredomainsicu.ru',
   });
 
   export default api;
