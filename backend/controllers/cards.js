@@ -7,7 +7,7 @@ const ForbiddenError = require('../errors/ForbiddenError');
 module.exports.createCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
-    .then((card) => res.status(201).send(card ))
+    .then((card) => res.status(201).send(card))
 
     .catch((error) => {
       if (error.name === 'ValidationError') {
