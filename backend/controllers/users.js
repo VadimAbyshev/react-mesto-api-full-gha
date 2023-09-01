@@ -5,7 +5,7 @@ const User = require('../models/user');
 const NotFoundError = require('../errors/NotFoundError');
 const BadRequestError = require('../errors/BadRequestError');
 const ConflictError = require('../errors/ConflictError');
-
+const { SECRET_KEY = 'sobaka' } = process.env;
 module.exports.addUser = (req, res, next) => {
   const {
     name, about, avatar, email, password,
